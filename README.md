@@ -3,6 +3,9 @@
 This workspace contains the current orchard simulation for the PX4 UAV and
 Husarion Panther UGV. Commands below assume ROS 2 Jazzy and a bash shell.
 
+
+Editor`s note!!!!: some information on the read me and everything you need to know file can be wrong. I did not have time to check and fix all of them. This repository is currently acting as a backup file so people can at least use the methodologies used in this project.
+
 ## 1. Start from a clean terminal
 
 Every command that starts a ROS node must be run in a terminal where the
