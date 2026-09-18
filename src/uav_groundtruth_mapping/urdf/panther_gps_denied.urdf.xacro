@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="panther" xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <!-- Reuse the complete Panther body, components, LiDAR, and camera. -->
+  <xacro:include
+    filename="$(find husarion_ugv_description)/urdf/panther.urdf.xacro" />
+
+  <!--
+    Gazebo-native skid-steer drive for this standalone GPS-denied stack.
+    This keeps the simulation usable even when the optional
+    ros-jazzy-gz-ros2-control Debian package is not installed.
+  -->
+  <gazebo>
+    <plugin
+      filename="gz-sim-diff-drive-system"
+      name="gz::sim::systems::DiffDrive">
+      <left_joint>fl_wheel_joint</left_joint>
+      <left_joint>rl_wheel_joint</left_joint>
+      <right_joint>fr_wheel_joint</right_joint>
+      <right_joint>rr_wheel_joint</right_joint>
+      <wheel_separation>0.515</wheel_separation>
+      <wheel_radius>0.1825</wheel_radius>
+      <max_linear_acceleration>0.8</max_linear_acceleration>
+      <min_linear_acceleration>-1.0</min_linear_acceleration>
+      <max_angular_acceleration>1.5</max_angular_acceleration>
+      <min_angular_acceleration>-1.8</min_angular_acceleration>
+      <max_linear_velocity>0.40</max_linear_velocity>
+      <min_linear_velocity>-0.20</min_linear_velocity>
+      <max_angular_velocity>1.20</max_angular_velocity>
+      <min_angular_velocity>-1.20</min_angular_velocity>
+      <topic>/panther/native/cmd_vel</topic>
+      <odom_topic>/panther/native/odometry</odom_topic>
+      <tf_topic>/panther/native/tf</tf_topic>
+      <odom_publish_frequency>50</odom_publish_frequency>
+    </plugin>
+  </gazebo>
+
+</robot>

@@ -1,0 +1,8 @@
+Version 20260901_uav_speed_origin
+
+Backup taken before restoring the pre-speed-estimator behavior.
+Files backed up: visual_tag_follower.py, uav_camera_viewer.py,
+test_visual_tag_follower.py, complete_visual_follow_harvest.launch.py.
+Restoration: velocity_feedforward_gain defaults changed back to 0.0;
+the estimator code is retained but cannot affect commands unless explicitly
+enabled in a future version.

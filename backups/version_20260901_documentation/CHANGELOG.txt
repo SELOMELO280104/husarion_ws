@@ -1,0 +1,5 @@
+Version 20260901_documentation
+
+Added the workspace README.md and EVERYTHING_YOU_NEED_TO_KNOW.md guides.
+Documented current launch commands, mapping products, navigation, visual
+tracking, frames, timestamps, diagnostics, QGroundControl, and versioning.

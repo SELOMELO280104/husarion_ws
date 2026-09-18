@@ -1,0 +1,48 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/robocare/husarion_ws/install/twist_mux_controller/include/**",
+        "/home/robocare/husarion_ws/install/px4_msgs/include/**",
+        "/home/robocare/husarion_ws/install/low_pass_filter/include/**",
+        "/home/robocare/husarion_ws/install/husarion_ugv_manager/include/**",
+        "/home/robocare/husarion_ws/install/husarion_ugv_lights/include/**",
+        "/home/robocare/husarion_ws/install/husarion_ugv_hardware_interfaces/include/**",
+        "/home/robocare/husarion_ws/install/husarion_ugv_diagnostics/include/**",
+        "/home/robocare/husarion_ws/install/husarion_ugv_battery/include/**",
+        "/home/robocare/husarion_ws/install/husarion_ugv_utils/include/**",
+        "/home/robocare/husarion_ws/install/husarion_ugv_msgs/include/**",
+        "/home/robocare/husarion_ws/install/husarion_ugv_gazebo/include/**",
+        "/home/robocare/husarion_ws/install/husarion_mecanum_drive_controller/include/**",
+        "/home/robocare/husarion_ws/install/behaviortree_ros2/include/**",
+        "/home/robocare/husarion_ws/install/btcpp_ros2_interfaces/include/**",
+        "/home/robocare/husarion_ws/install/behaviortree_cpp/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/robocare/husarion_ws/src/behaviortree_cpp/include/**",
+        "/home/robocare/husarion_ws/src/behaviortree_ros2/behaviortree_ros2/include/**",
+        "/home/robocare/husarion_ws/src/husarion_controllers/husarion_mecanum_drive_controller/include/**",
+        "/home/robocare/husarion_ws/src/husarion_controllers/low_pass_filter/include/**",
+        "/home/robocare/husarion_ws/src/husarion_controllers/twist_mux_controller/include/**",
+        "/home/robocare/husarion_ws/src/husarion_ugv_ros/husarion_ugv_battery/include/**",
+        "/home/robocare/husarion_ws/src/husarion_ugv_ros/husarion_ugv_diagnostics/include/**",
+        "/home/robocare/husarion_ws/src/husarion_ugv_ros/husarion_ugv_gazebo/include/**",
+        "/home/robocare/husarion_ws/src/husarion_ugv_ros/husarion_ugv_hardware_interfaces/include/**",
+        "/home/robocare/husarion_ws/src/husarion_ugv_ros/husarion_ugv_lights/include/**",
+        "/home/robocare/husarion_ws/src/husarion_ugv_ros/husarion_ugv_manager/include/**",
+        "/home/robocare/husarion_ws/src/husarion_ugv_ros/husarion_ugv_utils/include/**",
+        "/home/robocare/husarion_ws/src/joy2twist/joy2twist/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

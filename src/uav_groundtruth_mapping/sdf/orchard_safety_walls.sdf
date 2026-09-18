@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <!--
+    The orchard ground mesh occupies approximately
+      x = [-10.25, 38.18], y = [-10.25, 28.09]
+    after the -10 m world offset in orchard.sdf.  The west wall is moved
+    farther inward to x=-9.05 because that is the measured UAV occupancy-map
+    limit. All four poses are rasterized into the generated Nav2 map so AMCL
+    expects the same returns that the real 2-D LiDAR receives.
+  -->
+  <model name="orchard_safety_walls">
+    <static>true</static>
+    <link name="walls">
+      <collision name="west_wall_collision">
+        <pose>-9.05 8.92 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.30 37.64 1.50</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="west_wall_visual">
+        <pose>-9.05 8.92 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.30 37.64 1.50</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.65 0.05 1</ambient>
+          <diffuse>0.95 0.65 0.05 1</diffuse>
+        </material>
+      </visual>
+
+      <collision name="east_wall_collision">
+        <pose>37.83 8.92 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.30 37.64 1.50</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="east_wall_visual">
+        <pose>37.83 8.92 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.30 37.64 1.50</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.65 0.05 1</ambient>
+          <diffuse>0.95 0.65 0.05 1</diffuse>
+        </material>
+      </visual>
+
+      <collision name="south_wall_collision">
+        <pose>13.965 -9.90 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>47.43 0.30 1.50</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="south_wall_visual">
+        <pose>13.965 -9.90 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>47.43 0.30 1.50</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.65 0.05 1</ambient>
+          <diffuse>0.95 0.65 0.05 1</diffuse>
+        </material>
+      </visual>
+
+      <collision name="north_wall_collision">
+        <pose>13.965 27.74 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>47.43 0.30 1.50</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="north_wall_visual">
+        <pose>13.965 27.74 0.75 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>47.43 0.30 1.50</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.65 0.05 1</ambient>
+          <diffuse>0.95 0.65 0.05 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

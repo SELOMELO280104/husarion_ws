@@ -1,0 +1,12 @@
+source: "/home/robocare/husarion_ws/maps/uav_groundtruth_map_20260730_011810_664017_filtered.pcd"
+ground_z: -0.3244
+row_angle_deg: 0.000
+row_spacing_m: 3.000
+row_count: 11
+corridor_count: 10
+accessible_corridor_count: 10
+row_centers_m: [-6.075, -3.075, -0.075, 2.925, 5.925, 8.925, 11.775, 14.775, 17.925, 20.775, 23.775]
+corridor_centers_m: [-4.575, -1.575, 1.425, 4.425, 7.425, 10.350, 13.275, 16.350, 19.350, 22.275]
+corridor_half_width_m: 0.550
+resolution: 0.100
+reachable_cells: 77619

@@ -1,0 +1,24 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/robocare/husarion_ws/install/uav_groundtruth_mapping/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/uav_ugv_control/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/uav_terrain_mapping/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/uav_gps_mapping/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/px4_msgs/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/husarion_ugv_utils/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/husarion_ugv_msgs/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/robocare/husarion_ws/install/uav_groundtruth_mapping/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/uav_ugv_control/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/uav_terrain_mapping/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/uav_gps_mapping/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/px4_msgs/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/husarion_ugv_utils/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/husarion_ugv_msgs/lib/python3.12/site-packages",
+        "/home/robocare/husarion_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

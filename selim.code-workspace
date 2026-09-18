@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Desktop/selim"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../PX4-Autopilot"
+		}
+	],
+	"settings": {
+		"ros.distro": "jazzy"
+	}
+}

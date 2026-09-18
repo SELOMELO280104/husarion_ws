@@ -1,0 +1,5 @@
+Version 20260901_readme_dependencies
+
+Clarified per-terminal ROS sourcing, launch prerequisites, which commands
+start Gazebo/vehicles versus attach to an existing simulator, and diagnosis
+for windows opening without spawned UAV/UGV.
