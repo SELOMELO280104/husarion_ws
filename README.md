@@ -6,6 +6,61 @@ Husarion Panther UGV. Commands below assume ROS 2 Jazzy and a bash shell.
 
 Editor`s note!!!!: some information on the read me and everything you need to know file can be wrong. I did not have time to check and fix all of them. This repository is currently acting as a backup file so people can at least use the methodologies used in this project.
 
+
+
+## Dependencies & Installation
+
+This repository contains the custom control and mapping packages for the UAV-UGV orchard simulation. To run this project on a local machine, you must install the required external dependencies and third-party packages that are excluded from version control.
+
+### 1. Prerequisites
+* **ROS 2 Jazzy:** [Official Installation Guide](https://docs.ros.org/en/jazzy/Installation.html)
+* **Gazebo Harmonic:** Installed alongside ROS 2 Jazzy.
+* **PX4 Autopilot:** Must be installed in your home directory.
+  ```bash
+  cd ~
+  git clone [https://github.com/PX4/PX4-Autopilot.git](https://github.com/PX4/PX4-Autopilot.git) --recursive
+  bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
+
+### 2. Workspace Setup
+
+Clone this repository to create your workspace base:
+Bash
+
+mkdir -p ~/husarion_ws
+cd ~/husarion_ws
+git clone [https://github.com/SELOMELO280104/husarion_ws.git](https://github.com/SELOMELO280104/husarion_ws.git) .
+
+### 3. Cloning Third-Party Dependencies
+
+Navigate to the src folder and clone the essential PX4, Husarion, and BehaviorTree packages:
+Bash
+
+cd ~/husarion_ws/src
+
+# PX4 Messages
+git clone [https://github.com/PX4/px4_msgs.git](https://github.com/PX4/px4_msgs.git)
+
+# BehaviorTree (Required for Navigation2)
+git clone [https://github.com/BehaviorTree/BehaviorTree.CPP.git](https://github.com/BehaviorTree/BehaviorTree.CPP.git)
+git clone [https://github.com/BehaviorTree/BehaviorTree.ROS2.git](https://github.com/BehaviorTree/BehaviorTree.ROS2.git)
+
+# Husarion Panther & Gazebo Simulation Packages
+git clone [https://github.com/husarion/husarion_components_description.git](https://github.com/husarion/husarion_components_description.git)
+git clone [https://github.com/husarion/husarion_controllers.git](https://github.com/husarion/husarion_controllers.git)
+git clone [https://github.com/husarion/husarion_gz_worlds.git](https://github.com/husarion/husarion_gz_worlds.git)
+git clone [https://github.com/husarion/husarion_ugv_ros.git](https://github.com/husarion/husarion_ugv_ros.git)
+git clone [https://github.com/husarion/joy2twist.git](https://github.com/husarion/joy2twist.git)
+
+### 4. Install Dependencies & Build
+
+Use rosdep to install any missing underlying dependencies before building the workspace:
+Bash
+
+cd ~/husarion_ws
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+
 ## 1. Start from a clean terminal
 
 Every command that starts a ROS node must be run in a terminal where the
