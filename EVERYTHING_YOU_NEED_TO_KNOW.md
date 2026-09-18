@@ -29,7 +29,7 @@ This repository contains the custom control and mapping packages for the UAV-UGV
   git clone [https://github.com/PX4/PX4-Autopilot.git](https://github.com/PX4/PX4-Autopilot.git) --recursive
   bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
 
-2. Workspace Setup
+### 2. Workspace Setup
 
 Clone this repository to create your workspace base:
 Bash
@@ -38,7 +38,7 @@ mkdir -p ~/husarion_ws
 cd ~/husarion_ws
 git clone [https://github.com/SELOMELO280104/husarion_ws.git](https://github.com/SELOMELO280104/husarion_ws.git) .
 
-3. Cloning Third-Party Dependencies
+### 3. Cloning Third-Party Dependencies
 
 Navigate to the src folder and clone the essential PX4, Husarion, and BehaviorTree packages:
 Bash
@@ -59,7 +59,7 @@ git clone [https://github.com/husarion/husarion_gz_worlds.git](https://github.co
 git clone [https://github.com/husarion/husarion_ugv_ros.git](https://github.com/husarion/husarion_ugv_ros.git)
 git clone [https://github.com/husarion/joy2twist.git](https://github.com/husarion/joy2twist.git)
 
-4. Install Dependencies & Build
+### 4. Install Dependencies & Build
 
 Use rosdep to install any missing underlying dependencies before building the workspace:
 Bash
