@@ -37,14 +37,14 @@ Bash
 
 cd ~/husarion_ws/src
 
-# PX4 Messages
+## PX4 Messages
 git clone [https://github.com/PX4/px4_msgs.git](https://github.com/PX4/px4_msgs.git)
 
-# BehaviorTree (Required for Navigation2)
+## BehaviorTree (Required for Navigation2)
 git clone [https://github.com/BehaviorTree/BehaviorTree.CPP.git](https://github.com/BehaviorTree/BehaviorTree.CPP.git)
 git clone [https://github.com/BehaviorTree/BehaviorTree.ROS2.git](https://github.com/BehaviorTree/BehaviorTree.ROS2.git)
 
-# Husarion Panther & Gazebo Simulation Packages
+## Husarion Panther & Gazebo Simulation Packages
 git clone [https://github.com/husarion/husarion_components_description.git](https://github.com/husarion/husarion_components_description.git)
 git clone [https://github.com/husarion/husarion_controllers.git](https://github.com/husarion/husarion_controllers.git)
 git clone [https://github.com/husarion/husarion_gz_worlds.git](https://github.com/husarion/husarion_gz_worlds.git)
